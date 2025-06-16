@@ -6,10 +6,20 @@ let enderecos = [];
 let tipos = [];
 let custos = [];
 let continuar = true;
-let i = 0; 
+let i = 0;
+let totalEntregas; 
+let custoTotal;
+let media; 
 
-while (continuar) {
-    
 
-    
+   // ======= PARTE 3 - Processamento dos Resultados =======
+
+totalEntregas = i; 
+custoTotal = 0;
+
+for (let j = 0; j < totalEntregas; j++) {
+    custoTotal += custos[j];
 }
+
+media = custoTotal / totalEntregas;
+    
